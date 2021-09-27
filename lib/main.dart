@@ -15,23 +15,23 @@ void main() {
   runApp(MyApp());
 }
 
-class _SplashState extends State<Splash> {
-  @override
-  void initState() {
-    super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
-    Future.delayed(Duration(seconds: 4)).then((_) {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => MyApp()));
-    });
-  }
+// class _SplashState extends State<Splash> {
+//   @override
+//   void initState() {
+//     super.initState();
+//     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
+//     Future.delayed(Duration(seconds: 4)).then((_) {
+//       Navigator.pushReplacement(
+//           context, MaterialPageRoute(builder: (context) => MyApp()));
+//     });
+//   }
 
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     // TODO: implement build
+//     throw UnimplementedError();
+//   }
+// }
 
 class MyApp extends StatelessWidget {
   @override
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
                       TextButton(
                         onPressed: () {},
                         child: Text(
-                          "Sign up for Facebook",
+                          "Teste",
                           style: TextStyle(color: Colors.white),
                         ),
                       ),
@@ -107,5 +107,3 @@ Widget build(BuildContext context) {
   // TODO: implement build
   throw UnimplementedError();
 }
-
-class Splash {}
